@@ -2,21 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="css/main.css" />
-
-    <!-- Title of the webpage -->
     <title>Mid Term</title>
   </head>
   <body>
-    <div class="wrapper">
+    <!-- Main wrapper for the content -->
+    <div class="main-container">
+      <!-- Header  with logo and title -->
       <header>
-        <img src="images/lone-starfish-wide.jpg" alt="Header Image" />
+        <img src="images/lone-starfish-wide.jpg" alt="starfish-wide" />
         <h1>Lone Starfish</h1>
       </header>
 
+      <!-- Navigation menu styling -->
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
@@ -25,10 +23,17 @@
         </ul>
       </nav>
 
+      <!-- Main article section -->
       <article>
         <h2>Life of a Starfish</h2>
-        <img src="images/lone-starfish.jpg" alt="Starfish Image" class="left" />
+      <!-- header image style -->
+        <img
+          src="images/lone-starfish.jpg"
+          alt="Starfish main picture"
+          class="left"
+        />
         <p>
+          <!-- disciption of a starfish's life -->
           Swallower catla Black angelfish grunter striped bass scissor-tail
           rasbora; slender mola. Snapper catalufa silver driftfish, kaluga
           lungfish boga greeneye, "french angelfish peamouth halfbeak batfish
@@ -54,8 +59,10 @@
         </p>
       </article>
 
+      <!-- Starfish facts -->
       <section>
         <h3>Facts About Starfish</h3>
+        <!-- List of factual points -->
         <ul>
           <li>
             Australian herring barbel Mexican golden trout, killifish bonito;
@@ -74,9 +81,10 @@
             River sucker, mojarra.
           </li>
         </ul>
-        <h3>Contact to learn more</h3>
+        <h3>Contact Us</h3>
       </section>
 
+      <!-- Contact form section -->
       <section class="contact-section">
         <form>
           <label for="name">Your Name:</label>
@@ -86,6 +94,7 @@
           <label for="message">Your Message:</label>
           <textarea id="message" name="message"></textarea>
           <p>Would you like to visit the starfish?</p>
+          <!-- Radio buttons for visit options -->
           <div class="radio">
             <label for="yes">Yes</label>
             <input type="radio" id="yes" name="visit" value="yes" />
@@ -98,6 +107,7 @@
         </form>
       </section>
 
+      <!-- Footer with copyright information -->
       <footer>
         <p>&copy; Lone Starfish.</p>
       </footer>
