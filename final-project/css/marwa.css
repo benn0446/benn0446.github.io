@@ -1,0 +1,454 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #334; /* Set the text color */
+  background-color: white; /* Set the background color */
+}
+
+header {
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Space out items equally */
+  align-items: center; /* Center items vertically */
+  padding: 12px 18px; /* Set padding around the header */
+  background-color: #000;
+}
+
+/* Style the logo image inside the header */
+header img {
+  height: 52px;
+}
+
+.container {
+  width: 100%; /* Full width of the parent */
+}
+
+.container {
+  width: 82%;
+  margin: 0 auto; /* Center the container */
+  padding: 22px;
+}
+
+h1 {
+  color: #000;
+  margin-top: 22px;
+}
+
+h2 {
+  margin-top: 32px;
+}
+
+.hero-section {
+  position: relative; /* Position elements relative to the section */
+  text-align: center; /* Center text */
+  color: white;
+}
+
+.hero-section h1 {
+  color: black;
+  padding: 102px; /* Add padding around the text */
+  font-size: 3.1rem;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -48%);
+}
+
+.hero-section p {
+  color: #000;
+  position: absolute; /* Absolute positioning */
+  top: 58%; /* Position from the top */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -48%);
+}
+
+.hero-section button {
+  margin: auto;
+  margin-left: 102px;
+  padding: 36px;
+  background-color: #c78c06;
+  position: relative;
+  bottom: 10px;
+  left: 20px;
+}
+
+.hero-section button::after {
+  content: ""; /* No content, just display the arrow */
+  width: 0;
+  height: 0;
+  border-left: 14px solid white; /* Arrow color */
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent; /* Transparent bottom border */
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-48%);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%; /* Full width of the parent */
+}
+
+/* Brand logo styling in the nav bar */
+nav .brand-logo {
+  margin-right: auto; /* Align the logo to the left */
+}
+
+nav ul {
+  display: flex;
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+nav ul li {
+  margin: 12px 52px; /* Set margins for the list items */
+}
+
+/* Link styles in the nav menu */
+nav ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #c78c06;
+  padding: 12px 22px; /* Add padding around links */
+  transition: background-color 0.32s;
+}
+
+nav ul li:first-child a {
+  background-color: #c78c06;
+  color: #000; 
+}
+
+/* Hover effect for the links in the nav menu */
+nav ul li a:hover {
+  background-color: #555555;
+}
+
+nav .search-bar {
+  display: flex;
+  align-items: center;
+}
+
+/* Styles for the search input field */
+nav .search-bar input[type="text"] {
+  padding: 6px;
+  border: none; /* Remove border */
+  border-radius: 4px; 
+}
+
+.hero-content {
+  position: absolute; 
+  bottom: 22px; 
+  right: 22px; 
+  background-color: black;
+  color: white; 
+  padding-left: 22px; 
+  padding-right: 22px; 
+}
+
+
+.about-section {
+  background-color: #ffe6ac; /* Set background color */
+  font-size: 25px; /* Set font size */
+  overflow: auto; /* Handle overflow with a scrollbar */
+}
+
+
+.about-section img {
+  padding: 6px; 
+  margin-left: 92px; 
+  float: left; /* Float the image to the left */
+  width: 41%; /* Set image width */
+  height: 42%; /* Set image height */
+}
+
+
+.vision-section {
+  position: relative; /* Relative positioning */
+  width: 100%; /* Full width of the parent */
+}
+
+/* Image styling inside the vision section */
+.vision-section img {
+  width: 100%; /* Full width of the parent */
+  height: 352px; /* Set height of the image */
+  object-fit: cover; /* Cover the area with the image */
+}
+
+
+.vision-content {
+  position: absolute; 
+  top: 48%; 
+  left: 42%;
+  transform: translate(-52%, -48%); 
+  text-align: left; 
+  color: white; 
+}
+
+
+.vision-content h3 {
+  font-size: 2.1em; /* Set font size */
+  margin: 2px 0 12px; /* Set margins */
+}
+
+
+.vision-content p {
+  font-size: 1.22em; 
+  line-height: 1.52; 
+}
+
+
+.vision-content button {
+  padding: 48px 58px; 
+  font-size: 2.1em; 
+  color: #fff; 
+  background-color: #333; 
+  border-color: #ffe6ac; 
+  cursor: pointer; 
+  transition: background-color 0.32s ease; 
+  position: relative; 
+}
+
+
+.vision-content button::after {
+  content: ""; /* No content, just display the arrow */
+  width: 0;
+  height: 0;
+  border-left: 12px solid white; /* Arrow color */
+  border-top: 8px solid transparent; /* Transparent top border */
+  border-bottom: 8px solid transparent; /* Transparent bottom border */
+  position: absolute;
+  right: 18px; 
+  top: 48%; 
+  transform: translateY(-52%); 
+}
+
+
+.services-grid {
+  display: grid; /* Use CSS Grid layout */
+  grid-template-columns: repeat(6, 1fr); /* Create 6 equal columns */
+  grid-template-rows: auto auto; /* Auto rows */
+  gap: 18px; /* Add gap between grid items */
+  padding: 22px; 
+}
+
+/* Styles for the first service item in the grid */
+.services-grid .service-item:nth-child(1) {
+  grid-column: 1 / 4; /* Span 3 columns (1.5 columns) */
+}
+
+/* Styles for the second service item in the grid */
+.services-grid .service-item:nth-child(2) {
+  grid-column: 4 / 7; /* Span 3 columns (1.5 columns) */
+}
+
+/* Styles for the third service item in the grid */
+.services-grid .service-item:nth-child(3) {
+  grid-column: 1 / 3; /* Takes 2 columns in the second row */
+}
+
+/* Styles for the fourth service item in the grid */
+.services-grid .service-item:nth-child(4) {
+  grid-column: 3 / 5; /* Takes 2 columns in the second row */
+}
+
+/* Styles for the fifth service item in the grid */
+.services-grid .service-item:nth-child(5) {
+  grid-column: 5 / 7; /* Takes 2 columns in the second row */
+}
+
+
+.service-item {
+  background-color: #ffe6ac; 
+  padding: 22px; 
+  border: 1px solid #ccc; 
+  border-radius: 9px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12); 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+}
+
+
+.service-item img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+  margin-bottom: 12px; 
+}
+
+/* Heading styling inside the service item */
+.service-item h2,
+.service-item h3 {
+  font-size: 1.6em; 
+  margin-bottom: 12px; 
+}
+
+
+.service-item p {
+  font-size: 1.1em; 
+  line-height: 1.6; 
+  margin-bottom: 18px; 
+}
+
+/* General button styling */
+button {
+  background-color: #333; 
+  color: white;
+  padding: 36px; 
+  border: none; 
+  border-radius: 6px; 
+  cursor: pointer; /* Show pointer cursor */
+  font-size: 1.1em; 
+  transition: background-color 0.32s ease; 
+  align-self: start; 
+  position: relative; 
+}
+
+
+button::after {
+  content: ""; /* No content, just display the arrow */
+  width: 0;
+  height: 0;
+  border-top: 11px solid transparent; 
+  border-bottom: 11px solid transparent; /* Transparent bottom border */
+  position: absolute; 
+  right: 22px; 
+  top: 50%; 
+  transform: translateY(-52%); 
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #555; /* Change background color on hover */
+}
+
+
+form {
+  width: 46%; 
+  display: inline-block; 
+  vertical-align: top; 
+}
+
+
+form label {
+  display: block; /* Block display for labels */
+}
+
+/* Input and textarea styling inside the form */
+form input,
+form textarea {
+  width: 100%; 
+  padding: 12px; 
+  margin-bottom: 12px; 
+  border: 1px solid #ccc; 
+}
+
+
+form textarea {
+  height: 202px; 
+}
+
+/* Button styling inside the form */
+form button {
+  padding: 12px 22px; 
+  background-color: #333; 
+  color: #ffe6ac; 
+  border: none; 
+  cursor: pointer; 
+  position: relative; 
+}
+
+/* Hover effect for the button inside the form */
+form button:hover {
+  background-color: #555; 
+}
+
+
+table {
+  width: 100%; /* Full width of the parent */
+  border-collapse: collapse; /* Collapse borders */
+  margin-top: 22px; /* Add top margin */
+}
+
+
+table,
+th,
+td {
+  border: 1px solid #ccc; 
+  padding: 12px; 
+  text-align: left; 
+}
+
+/* Table header styling */
+th {
+  background-color: #ffe6ac; /* Set background color */
+}
+
+
+.team-member {
+  background-color: #ffe6ac; 
+  font-size: 25px; 
+  overflow: auto; /* Handle overflow with a scrollbar */
+}
+
+
+.team-member img {
+  padding: auto; 
+  margin: auto; 
+  float: left; 
+  width: 52%; 
+  height: 42%; 
+}
+
+
+.team-member-alt {
+  background-color: #ffe6ac; 
+  font-size: 25px; 
+  overflow: auto; 
+}
+
+
+.team-member-alt img {
+  padding: auto; 
+  margin: auto; 
+  float: right; /* Float image to the right */
+  width: 52%; 
+  height: 42%; 
+}
+
+/* Header styling inside the team member section */
+.team-member header {
+  background-color: white; 
+  font-size: 3.1rem; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Location map styling */
+.location-map {
+  width: 46%; 
+  display: inline-block; 
+  vertical-align: top; 
+  padding-left: 6%; 
+}
+
+/* iFrame styling */
+iframe {
+  width: 100%; 
+  height: 302px; 
+  border: 0; /* Remove border */
+}
+
+/* Footer styling */
+footer {
+  background-color: #222121; 
+  margin-top: 22px; 
+  color: #c78c06; 
+  margin: 102px; /* Add margin around the footer */
+  padding-left: 102px; /* Add left padding */
+}
+
+/* Hover effect for buttons in the second section */
+.second-section button:hover {
+  background-color: #555; 
+}
